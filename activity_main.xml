@@ -1,6 +1,6 @@
-@@ -0,0 +1,40 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#191970" 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -16,7 +16,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="94dp"
-        android:text="Click Which Tool You Would Like to Use:" />
+        android:text="Click Which Tool You Would Like to Use:"
+        android:textColor="#FF4500" />
 
     <TextView
         android:id="@+id/textView2"
@@ -27,7 +28,8 @@
         android:layout_marginLeft="48dp"
         android:layout_marginTop="35dp"
         android:text="Unit Converter"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF4500" />
 
     <Button
         android:id="@+id/button_ruler"
@@ -36,7 +38,8 @@
         android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="22dp"
-        android:text="Ruler" />
+        android:text="Ruler"
+        android:textColor="#FF4500" />
 
     <Button
         android:id="@+id/Button01"
@@ -45,7 +48,8 @@
         android:layout_alignBaseline="@+id/button_ruler"
         android:layout_alignBottom="@+id/button_ruler"
         android:layout_alignRight="@+id/textView1"
-        android:text="Converter" />
+        android:text="Converter"
+        android:textColor="#FF4500" />
 
 </RelativeLayout>
 
