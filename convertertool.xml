@@ -2,14 +2,191 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#191970" >
+    android:background = "#191970">
 
-    <Button
-        android:id="@+id/button1"
+    <EditText
+        android:id="@+id/mmeterEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Convert" />
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/mmeter"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="number" >
 
-</RelativeLayout>
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/cmeterEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/cmeter"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/meterEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/meter"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/kmeterEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/kmeter"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/inchEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/inch"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/feetEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/feet"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/mileEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mile"
+        android:layout_alignParentRight="true"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/yardEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/yard"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/cmeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/kmeter"
+        android:layout_below="@+id/mmeterEditText"
+        android:layout_marginTop="14dp"
+        android:text="Centimeters"
+        android:textColor="#ff4500" />
+
+    <TextView
+        android:id="@+id/meter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cmeter"
+        android:layout_below="@+id/cmeterEditText"
+        android:layout_marginTop="15dp"
+        android:text="Meters"
+        android:textColor="#ff4500" />
+
+    <TextView
+        android:id="@+id/kmeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/mmeter"
+        android:layout_below="@+id/meterEditText"
+        android:layout_marginTop="16dp"
+        android:text="Kilometers"
+        android:textColor="#ff4500" />
+
+    <TextView
+        android:id="@+id/inch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/kmeterEditText"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="15dp"
+        android:text="Inches"
+        android:textColor="#ff4500" />
+
+    <TextView
+        android:id="@+id/feet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inch"
+        android:layout_below="@+id/inchEditText"
+        android:layout_marginTop="15dp"
+        android:text="Feet"
+        android:textColor="#ff4500" />
+
+    <TextView
+        android:id="@+id/mile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/feet"
+        android:layout_below="@+id/feetEditText"
+        android:layout_marginTop="24dp"
+        android:text="Miles"
+        android:textColor="#ff4500" />
+
+    <TextView
+        android:id="@+id/yard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mile"
+        android:layout_below="@+id/mile"
+        android:layout_marginTop="19dp"
+        android:text="Yards"
+        android:textColor="#ff4500" />
+
+    <Button
+        android:id="@+id/clearbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/convertbutton"
+        android:layout_alignBottom="@+id/convertbutton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="58dp"
+        android:text="Clear"
+        android:textColor="#ff4500" />
+
+    <Button
+        android:id="@+id/convertbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yardEditText"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/meter"
+        android:text="Convert"
+        android:textColor="#ff4500" />
+
+    <TextView
+        android:id="@+id/mmeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inch"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/millimeters"
+        android:textColor="#ff4500" />
+
+    </RelativeLayout>
