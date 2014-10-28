@@ -135,6 +135,115 @@ public class Converter extends Activity {
 					yard.setText(String.valueOf(yardFinalValue));
 				}
 				
+				else if(inch.getText().length() > 0)
+				{
+					String value = inch.getText().toString();
+					double finalValue = Double.parseDouble(value);
+					
+					double mmFinalValue = finalValue * 25.4;
+					mmeter.setText(String.valueOf(mmFinalValue));
+					
+					double cmeterFinalValue = finalValue * 2.54;
+					cmeter.setText(String.valueOf(cmeterFinalValue));
+					
+					double meterFinalValue = finalValue * .0254;
+					meter.setText(String.valueOf(meterFinalValue));
+					
+					double kmeterFinalValue = finalValue * .0000254;
+					kmeter.setText(String.valueOf(kmeterFinalValue));
+					
+					double feetFinalValue = finalValue * .0833333;
+					feet.setText(String.valueOf(feetFinalValue));
+					
+					double mileFinalValue = finalValue * .0000157828;
+					mile.setText(String.valueOf(mileFinalValue));
+					
+					double yardFinalValue = finalValue * .0277778;
+					yard.setText(String.valueOf(yardFinalValue));
+				}
+				
+				else if(feet.getText().length() > 0)
+				{
+					String value = feet.getText().toString();
+					double finalValue = Double.parseDouble(value);
+					
+					double mmFinalValue = finalValue * 304.8;
+					mmeter.setText(String.valueOf(mmFinalValue));
+					
+					double cmeterFinalValue = finalValue * 30.48;
+					cmeter.setText(String.valueOf(cmeterFinalValue));
+					
+					double meterFinalValue = finalValue * .3048;
+					meter.setText(String.valueOf(meterFinalValue));
+					
+					double kmeterFinalValue = finalValue * .00003048;
+					kmeter.setText(String.valueOf(kmeterFinalValue));
+					
+					double inchFinalValue = finalValue * 12;
+					inch.setText(String.valueOf(inchFinalValue));
+					
+					double mileFinalValue = finalValue * .000189394;
+					mile.setText(String.valueOf(mileFinalValue));
+					
+					double yardFinalValue = finalValue * .333333;
+					yard.setText(String.valueOf(yardFinalValue));
+				}
+				
+				else if(mile.getText().length() > 0)
+				{
+					String value = mile.getText().toString();
+					double finalValue = Double.parseDouble(value);
+					
+					double mmFinalValue = finalValue * 1609344;
+					mmeter.setText(String.valueOf(mmFinalValue));
+					
+					double cmeterFinalValue = finalValue * 160934;
+					cmeter.setText(String.valueOf(cmeterFinalValue));
+					
+					double meterFinalValue = finalValue * 1609.34;
+					meter.setText(String.valueOf(meterFinalValue));
+					
+					double kmeterFinalValue = finalValue * 1.60934;
+					kmeter.setText(String.valueOf(kmeterFinalValue));
+					
+					double inchFinalValue = finalValue * 63330;
+					inch.setText(String.valueOf(inchFinalValue));
+					
+					double feetFinalValue = finalValue * 5280;
+					feet.setText(String.valueOf(feetFinalValue));
+					
+					double yardFinalValue = finalValue * 1760;
+					yard.setText(String.valueOf(yardFinalValue));
+					
+				}
+				
+				else if(yard.getText().length() > 0)
+				{
+					String value = yard.getText().toString();
+					double finalValue = Double.parseDouble(value);
+					
+					double mmFinalValue = finalValue * 914.4;
+					mmeter.setText(String.valueOf(mmFinalValue));
+					
+					double cmeterFinalValue = finalValue * 91.44;
+					cmeter.setText(String.valueOf(cmeterFinalValue));
+					
+					double meterFinalValue = finalValue * .9144;
+					meter.setText(String.valueOf(meterFinalValue));
+					
+					double kmeterFinalValue = finalValue * .00009144;
+					kmeter.setText(String.valueOf(kmeterFinalValue));
+					
+					double inchFinalValue = finalValue * 36;
+					inch.setText(String.valueOf(inchFinalValue));
+					
+					double feetFinalValue = finalValue * 3;
+					feet.setText(String.valueOf(feetFinalValue));
+					
+					double mileFinalValue = finalValue * .000568182;
+					mile.setText(String.valueOf(mileFinalValue));
+				}
+				
 				else
 				{
 					mmeter.setText("0");
