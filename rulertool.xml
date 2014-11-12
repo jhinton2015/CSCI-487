@@ -1,9 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <AbsoluteLayout 
     android:background="#191970" 
-    android:layout_width="match_parent"
- 	android:layout_height="match_parent"
+    android:layout_width="match_parent"\android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <ImageView
@@ -17,10 +15,10 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="100dp"
+         android:layout_x="100dp"
         android:layout_y="5dp"
         android:text="Ruler Tool" 
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#FF4500" />
-
-</AbsoluteLayout>
+    </AbsoluteLayout>
+    
