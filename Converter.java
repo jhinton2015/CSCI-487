@@ -14,7 +14,7 @@ public class Converter extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		// Required call through to Activity.onCreate()
 		// Restore any saved instance state
-		super.onCreate(savedInstanceState);
+		super.onCreate(savedInstanceState); //test
 		setContentView(R.layout.convertertool);
 		final Button convert = (Button) findViewById(R.id.convertButton);
 		final Button clear = (Button) findViewById(R.id.clearbutton);
